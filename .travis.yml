@@ -1,0 +1,20 @@
+language: python
+python:
+  - "3.6"
+  - "3.8"
+  - "3.10"
+install:
+  - pip install -r requirements.txt
+script:
+  - python -m pytest
+notifications:
+  email:
+    recipients:
+      - mperich@ncsu.edu
+      - svangal@ncsu.edu
+      - kkarnat@ncsu.edu
+      - psangan@ncsu.edu
+      - skaalam@ncsu.edu
+
+    on_success: never
+    on_failure: always
