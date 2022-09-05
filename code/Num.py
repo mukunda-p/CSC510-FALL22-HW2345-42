@@ -1,5 +1,6 @@
 import math,random
 from The import the
+from Commons import per
 
 class Num:
     
@@ -39,6 +40,21 @@ class Num:
             if pos!=None:
                 self.isSorted=False
                 self._has[pos]=int(ele)
+
+
+    #Diversity (standard deviation from Nums, entropy for Syms)
+    def div(self,a):
+        a=self.nums()
+        return (per(a,0.9)-per(a,0.1))/2.58 
+    
+    #Central tendency (median for Nums, mode for Syms)
+    def mid(self):
+        return per(self.nums(),0.5) 
+
+
+
+
+
     
     
     
