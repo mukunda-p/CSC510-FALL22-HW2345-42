@@ -1,5 +1,6 @@
 from code.Num import Num
 from code.The import the
+from code.Sym import Sym
 from code.common import *
 
 def test_engine_num():
@@ -16,4 +17,22 @@ def test_engine_bignum():
         num.add(i)
     oo(num.nums())
     assert len(num._has)==32
+
+def the () :
+    oo(the)
+    assert true
+
+def test_engine_sym():
+    sym=Sym()
+    pairs=['a','a','a','a','b','b','c']
+    for x in pairs:
+        sym.add(x)
+        mode=sym.mid()
+        entropy=sym.div()
+        entropy=(1000*entropy)//1/1000
+        oo({"mid":mode,"div":entropy})
+    assert mode=='a' and 1.37<= entropy and entropy <= 1.38
+
+
+
     
