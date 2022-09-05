@@ -9,7 +9,7 @@ class Num:
         self.n=0
         self.at=c
         self.name=s
-        self._has=dict()
+        self._has=list()
         self.low=math.inf
         self.high=-math.inf
         self.isSorted=True
@@ -21,7 +21,7 @@ class Num:
     #Return kept numbers, sorted.
     def nums(self):
         if (not self.isSorted):
-            dict(sorted(self._has, key=lambda item: item[0]))
+            list(sorted(self._has))
         return self._has
             
         
