@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022 HW42
+Copyright (c) 2022 Mukunda Varma Pericherla
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
