@@ -25,20 +25,20 @@ class Num:
             
         
 
-    #Reservoir sampler. Keep atmost 'the[num]' numbers 
+    #Reservoir sampler. Keep atmost 'the[nums]' numbers 
     # (if we run out of space delete something old at random and add new)
     def add(self,ele,pos=None):
         if ele!='?':
             self.n=self.n+1
-            self.low=min(self.low,v)
-            self.high=min(self.high,v)
-            if ( len(self._has)<(the['nums']/self.n) ):
+            self.low=min(self.low,int(ele))
+            self.high=max(self.high,int(ele))
+            if ( len(self._has)<(the['nums']) ):
                 pos=1+len(self._has)
             elif ( random.randint(0,2*(the['nums']/self.n)) < (the['nums']/self.n) ):
                 pos=random.randint(0,(the['nums']/self.n))
             if pos!=None:
                 self.isSorted=False
-                self._has[pos]=int(v)
+                self._has[pos]=int(ele)
     
     
     
