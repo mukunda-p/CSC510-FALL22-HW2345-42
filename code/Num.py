@@ -1,6 +1,5 @@
 import math,random
-from The import the
-from Commons import per
+from code.Commons import per,the
 
 class Num:
     
@@ -9,7 +8,7 @@ class Num:
         self.n=0
         self.at=c
         self.name=s
-        self._has=list()
+        self._has=dict()
         self.low=math.inf
         self.high=-math.inf
         self.isSorted=True
@@ -35,15 +34,15 @@ class Num:
             self.high=max(self.high,int(ele))
             if ( len(self._has)<(the['nums']) ):
                 pos=1+len(self._has)
-            elif ( random.randint(0,2*(the['nums']/self.n)) < (the['nums']/self.n) ):
-                pos=random.randint(0,(the['nums']/self.n))
-            if pos!=None:
-                self.isSorted=False
-                self._has[pos]=int(ele)
+            elif ( random.randint(0,2*len(self._has)) < (the['nums']/self.n) ):
+                pos=random.randint(0,len(self._has))
+        if pos!=None:
+            self.isSorted=False
+            self._has[pos]=int(ele)
 
 
     #Diversity (standard deviation from Nums, entropy for Syms)
-    def div(self,a):
+    def div(self):
         a=self.nums()
         return (per(a,0.9)-per(a,0.1))/2.58 
     
