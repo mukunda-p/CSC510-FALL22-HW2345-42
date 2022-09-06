@@ -9,6 +9,10 @@ class Sym:
         if v != '?':
             self.n = self.n + 1
             self._has[v] = 1 + self._has.get(v, 0)
+
+
+    def mid(self):
+        return max(self._has, key=self._has.get)
     
 
 
