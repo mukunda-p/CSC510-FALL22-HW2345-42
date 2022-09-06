@@ -20,6 +20,8 @@ After setting up project follow the steps for unit tests execution:
 - To add new test cases create new files under tests folder with name test_* or add the test cases in the exisiting test_eg.py
 
 ## Team Members:
-<a href = "https://github.com/mukunda-p/CSC510-FALL22-HW2345-42/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=mukunda-p/CSC510-FALL22-HW2345-42"/>
-</a>
+- Kalyan Karnati
+- Mukunda Varma Pericherla
+- Pranavi Sharma Sanganabhatla
+- Saketh Vangala
+- Srihitha Reddy Kaalam
