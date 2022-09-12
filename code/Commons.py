@@ -13,3 +13,11 @@ def oo(t):
     print(str_t)
     return t
 
+#Maths
+#rnd function
+def rnd(x,places=0):
+    mult = math.pow(places or 2)
+    return math.floor(x*mult+0.5)/mult 
+
+
+
