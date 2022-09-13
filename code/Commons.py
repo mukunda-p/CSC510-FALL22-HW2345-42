@@ -29,12 +29,14 @@ def rnd(x,places=0):
 
 #parse csv file to rows and cols
 def csv(fileName):
-    if(fileName!=None or len(fileName.strip())==0):
+    if(fileName==None or len(fileName.strip())==0):
         raise Exception("FILE NOT FOUNDED")
     rows=[]
-    row_eles=file.readlines()
-    for row_ele in row_eles:
-        k=list(map(coerce,row_ele.split(',')))
+    with open(fileName,'r',encoding='utf-8') as file:
+        row_eles=file.readlines()
+        for row_ele in row_eles:
+            k=list(map(coerce,row_ele.split(',')))
+            rows.append(k)
     return rows
 
 def cli():
