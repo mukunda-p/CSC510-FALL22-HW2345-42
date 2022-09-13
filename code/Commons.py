@@ -22,10 +22,10 @@ def rnd(x,places=0):
 
 #Parse ‘the‘ config settings from ‘help‘.
 def csv(fileName):
-    if(fileName!=null or len(filename.strip())==0):
+    if(fileName!=None or len(fileName.strip())==0):
         raise Exception("FILE NOT FOUNDED")
     rows=[]
     with open(fileName,'r',encoding='utf-8') as file:
-        row_ele=csv.reader(fileName,delimeter=the['seperator']
+        row_ele=csv.reader(fileName,delimeter=the['seperator'])
         rows.append(row_ele)
     return rows                      
