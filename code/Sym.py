@@ -1,8 +1,10 @@
 import math 
 
 class Sym:
-    def __init__(self) -> None:
+    def __init__(self,c=0,s='') -> None:
         self.n = 0
+        self.name=s
+        self.at=c
         self._has = dict()
 
     

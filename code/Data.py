@@ -9,16 +9,16 @@ class Data:
     
     def __init__(self,src):
         self.cols=None
-        self.rows={}
+        self.rows=[]
+        self.src=src
         if type(self.src) == str:
             self.src=csv(src)
-            for row in src:
+            for row in self.src:
                 self.add(row)
         else:
-            for row in src:
+            for row in self.src:
                 self.add(row)
-    
-## Data Add a ‘row‘ to ‘data‘. Calls ‘add()‘ to updatie the ‘cols‘ with new values.
+
     def add(self,xs):
         if not self.cols:
             self.cols=Cols(xs)
@@ -32,16 +32,16 @@ class Data:
                 for j in i:
                     j.add(row.cells[j.at])
 
-# For ‘showCols‘ (default=‘data.cols.x‘) in ‘data‘, show ‘fun‘ 
+
     def stats(self,fun='mid'):
         showCols=self.cols.x or self.cols.y
         t={}
         for i in showCols:
-            if(type(i)==Num)
-            if(fun=='mid'):
-                v=i.mid()
-            elfi(fun=='div'):
-                v=i.div()
+            if(type(i)==Num):
+                if(fun=='mid'):
+                    v=i.mid()
+                elif(fun=='div'):
+                    v=i.div()
             t[i.name]=v
         return t
 

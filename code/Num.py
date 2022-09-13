@@ -1,5 +1,5 @@
 import math,random
-from code.Commons import per,the
+from Commons import per,the
 
 class Num:
     
