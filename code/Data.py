@@ -1,8 +1,8 @@
-from Commons import *
-from Num import Num
-from Sym import Sym
-from Cols import Cols
-from Row import Row 
+from code.Commons import *
+from code.Num import Num
+from code.Sym import Sym
+from code.Cols import Cols
+from code.Row import Row 
 
 
 class Data: 

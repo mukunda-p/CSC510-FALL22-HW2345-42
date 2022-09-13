@@ -1,5 +1,5 @@
-from Num import Num
-from Sym import Sym
+from code.Num import Num
+from code.Sym import Sym
 class Cols:
 
     def __init__(self,names):
