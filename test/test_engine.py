@@ -1,6 +1,7 @@
 from code.Num import Num
 from code.Sym import Sym
 from code.Commons import *
+from code.Data import Data
 
 def test_engine_num():
     the['nums']=512
@@ -35,11 +36,11 @@ def test_engine_sym():
 
 def test_engine_csv():
     n=0
-    print(csv("../data/auto93.csv"))
+    print(csv("auto93.csv"))
     assert true
 
 def test_engine_add():
-    d=Data("../data/auto93.csv")
+    d=Data("auto93.csv")
     for i in d.cols.y:
         oo(i)
     assert true
