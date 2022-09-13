@@ -33,12 +33,17 @@ class Data:
                     j.add(row.cells[j.at])
 
 # For ‘showCols‘ (default=‘data.cols.x‘) in ‘data‘, show ‘fun‘ 
-    def stats(self,places=None,showCols=None,fun=None):
-        showCols=showCols or self.cols.y
+    def stats(self,fun='mid'):
+        showCols=self.cols.x or self.cols.y
         t={}
         for i in showCols:
+            if(type(i)==Num)
             if(fun=='mid'):
-                v=Num.mid(i)
+                v=i.mid()
+            elfi(fun=='div'):
+                v=i.div()
+            t[i.name]=v
+        return t
 
         
 

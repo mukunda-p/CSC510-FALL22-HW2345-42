@@ -33,3 +33,14 @@ def test_engine_sym():
     oo({"mid":mode,"div":entropy})
     assert mode=='a' and 1.37<= entropy and entropy <= 1.38
 
+def test_engine_csv():
+    n=0
+    print(csv("../data/auto93.csv"))
+    assert true
+
+def test_engine_add():
+    d=Data("../data/auto93.csv")
+    for i in d.cols.y:
+        oo(i)
+    assert true
+
