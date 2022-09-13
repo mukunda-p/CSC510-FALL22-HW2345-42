@@ -32,10 +32,10 @@ class Num:
             self.n=self.n+1
             self.low=min(self.low,int(ele))
             self.high=max(self.high,int(ele))
-            if ( len(self._has)<(the['nums']) ):
+            if ( (len(self._has)+1)<(the['nums']) ):
                 pos=1+len(self._has)
-            elif ( random.randint(0,2*len(self._has)-2) < (the['nums']/self.n) ):
-                pos=random.randint(0,len(self._has)-2)
+            elif ( random.randint(0,2*len(self._has)) < (the['nums']/self.n) ):
+                pos=random.randint(0,len(self._has))
         if pos!=None:
             self.isSorted=False
             self._has[pos]=int(ele)
