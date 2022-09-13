@@ -1,6 +1,7 @@
 import math
+import csv
 
-the={}
+the={'seperator':',', 'nums': 512 , 'show_help': False, 'seed': 10019}
 
 #Return the 'p'-th thing from the sorted list 't'. 
 def per(t,p):
@@ -19,5 +20,12 @@ def rnd(x,places=0):
     mult = math.pow(places or 2)
     return math.floor(x*mult+0.5)/mult 
 
-
-
+#Parse ‘the‘ config settings from ‘help‘.
+def csv(fileName):
+    if(fileName!=null or len(filename.strip())==0):
+        raise Exception("FILE NOT FOUNDED")
+    rows=[]
+    with open(fileName,'r',encoding='utf-8') as file:
+        row_ele=csv.reader(fileName,delimeter=the['seperator']
+        rows.append(row_ele)
+    return rows                      
