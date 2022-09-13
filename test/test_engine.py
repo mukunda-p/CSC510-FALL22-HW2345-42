@@ -36,12 +36,12 @@ def test_engine_sym():
 
 def test_engine_csv():
     n=0
-    print(csv("auto93.csv"))
-    assert true
+    print(csv("./data/auto93.csv"))
+    assert True
 
 def test_engine_add():
-    d=Data("auto93.csv")
+    d=Data("./data/auto93.csv")
     for i in d.cols.y:
         oo(i)
-    assert true
+    assert True
 

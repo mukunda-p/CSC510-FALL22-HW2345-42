@@ -1,4 +1,4 @@
-import math,random
+import math,random,sys
 from code.Commons import per,the
 
 class Num:
@@ -32,9 +32,9 @@ class Num:
             self.n=self.n+1
             self.low=min(self.low,int(ele))
             self.high=max(self.high,int(ele))
-            if ( (len(self._has)+1)<(the['nums']) ):
+            if ( (len(self._has))<(the['nums']) ):
                 pos=1+len(self._has)
-            elif ( random.randint(0,2*len(self._has)) < (the['nums']/self.n) ):
+            elif ( random.randint(0,sys.maxsize) < (the['nums']/self.n) ):
                 pos=random.randint(0,len(self._has))
         if pos!=None:
             self.isSorted=False
