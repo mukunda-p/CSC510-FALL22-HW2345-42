@@ -58,10 +58,6 @@ def test_engine_stats():
 
     assert True
 
-def test_engine_bad():
-    print("Dont have this field \n !!! CRASH BAD false")
-    assert False
-
 def test_engine_list():
     assert True
 

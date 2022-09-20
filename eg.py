@@ -13,16 +13,6 @@ def main():
         -n --nums number of nums to keep = 512
         -s --seed random number seed = 10019
         -S --seperator feild seperator = ,]]''')
-    
-    if 'sym' in the['eg'].lower():
-        test_engine_sym()
-    elif 'num' in the['eg'].lower():
-        test_engine_num()
-    elif 'csv' in the['eg'].lower():
-        test_engine_csv()
-    elif 'add' in the['eg'].lower():
-        test_engine_add()
-        
-        
+
 
 main()
