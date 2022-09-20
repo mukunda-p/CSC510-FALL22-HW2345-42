@@ -9,6 +9,8 @@ def test_engine_num():
     for i in range(1,101):
         num.add(i)
     mid,div=num.mid(),num.div()
+    print()
+    print("NUM TEST CASE:")
     print(mid,div)
     assert 50<=mid and mid<=52 and 30.5<div and div<32
 
@@ -17,10 +19,14 @@ def test_engine_bignum():
     num=Num()
     for i in range(1,1001):
         num.add(i)
+    print()
+    print("BIGNUM TEST CASE:")
     oo(num.nums())
     assert len(num._has)==32
 
 def test_engine_the() :
+    print()
+    print("THE TEST CASE:")
     oo(the)
     assert True
 
@@ -32,32 +38,38 @@ def test_engine_sym():
     mode=sym.mid()
     entropy=sym.div()
     entropy=(1000*entropy)//1/1000
+    print()
+    print("SYM TEST CASE:")
     oo({"mid":mode,"div":entropy})
     assert mode=='a' and 1.37<= entropy and entropy <= 1.38
 
 def test_engine_csv():
     n=0
     src=the['file']
+    print()
+    print("CSV TEST CASE:")
     print(csv(src))
     assert True
 
 def test_engine_add():
     src=the['file']
     d=Data(src)
+    print()
+    print("ADD TEST CASE:")
     for i in d.cols.y:
         print(i)
     assert True
 
 def test_engine_stats():
     src=the['file']
+    print()
+    print("STATS TEST CASE:")
     d=Data(src)
     print('xmid:',str(d.stats('x','mid')))
     print('xdiv:',str(d.stats('x','div')))
     print('ymid:',str(d.stats('y','mid')))
     print('ydiv:',str(d.stats('y','div')))
-
     assert True
 
-def test_engine_list():
-    assert True
+
 
