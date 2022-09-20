@@ -9,6 +9,9 @@ This repo contains the code related to the homeworks 2,3,4 and 5 of the course C
 <!----->
 [![Stars](https://img.shields.io/github/forks/mukunda-p/CSC510-FALL22-HW2345-42)](https://github.com/mukunda-p/CSC510-FALL22-HW2345-42/network/members)
 <!----->
+[![DOI](https://zenodo.org/badge/532345514.svg)](https://zenodo.org/badge/latestdoi/532345514)
+<!----->
+
 
 ## Getting Started
 Follow the steps for setting up the project:
