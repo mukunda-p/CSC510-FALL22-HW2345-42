@@ -11,6 +11,7 @@ This repo contains the code related to the homeworks 2,3,4 and 5 of the course C
 <!----->
 [![DOI](https://zenodo.org/badge/532345514.svg)](https://zenodo.org/badge/latestdoi/532345514)
 <!----->
+[![CodeCov](https://codecov.io/gh/mukunda-p/CSC510-FALL22-HW2345-42/branch/master/graphs/badge.svg)](https://codecov.io/gh/mukunda-p/CSC510-FALL22-HW2345-42/branch/master/graphs/badge.svg)
 
 
 ## Getting Started
