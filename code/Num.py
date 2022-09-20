@@ -16,6 +16,9 @@ class Num:
             self.w=-1
         else:
             self.w=1
+    
+    def __str__(self):
+        return "{"+ f" n:{self.n}, at:{self.at+1}, name:{self.name}, low:{self.low}, high:{self.high}, isSorted:{self.isSorted}, w:{self.w}"+"}"
 
     #Return kept numbers, sorted.
     def nums(self):
@@ -36,9 +39,9 @@ class Num:
                 pos=1+len(self._has)
             elif ( random.randint(0,sys.maxsize) < (the['nums']/self.n) ):
                 pos=random.randint(0,len(self._has))
-        if pos!=None:
-            self.isSorted=False
-            self._has[pos]=int(ele)
+            if pos!=None:
+                self.isSorted=False
+                self._has[pos]=int(ele)
 
 
     #Diversity (standard deviation from Nums, entropy for Syms)

@@ -2,7 +2,7 @@ import math
 import sys
 import re as reg
 
-the={'eg':'','dump':False,'file':'','help':False,'nums':512,'seed':10019,'seperator':','}
+the={'eg':'','dump':False,'file':'./data/auto93.csv','help':False,'nums':512,'seed':10019,'seperator':','}
 
 #parsing
 def coerce(ele):
@@ -17,7 +17,7 @@ def per(t,p):
 
 #converts t to string and print
 def oo(t):
-    str_t=str(t)
+    str_t=repr(t)
     print(str_t)
     return t
 
@@ -50,6 +50,7 @@ def cli():
 
         if '-e' in args[i]:
             the['eg']=args[i+1]
+            
         elif '-d' in args[i]:
             if(args[i+1].lower()=='false'):
                 the['dump']=False

@@ -9,6 +9,7 @@ def test_engine_num():
     for i in range(1,101):
         num.add(i)
     mid,div=num.mid(),num.div()
+    print(mid,div)
     assert 50<=mid and mid<=52 and 30.5<div and div<32
 
 def test_engine_bignum():
@@ -19,7 +20,7 @@ def test_engine_bignum():
     oo(num.nums())
     assert len(num._has)==32
 
-def test_the() :
+def test_engine_the() :
     oo(the)
     assert True
 
@@ -36,12 +37,31 @@ def test_engine_sym():
 
 def test_engine_csv():
     n=0
-    print(csv("./data/auto93.csv"))
+    src=the['file']
+    print(csv(src))
     assert True
 
 def test_engine_add():
-    d=Data("./data/auto93.csv")
+    src=the['file']
+    d=Data(src)
     for i in d.cols.y:
-        oo(i)
+        print(i)
+    assert True
+
+def test_engine_stats():
+    src=the['file']
+    d=Data(src)
+    print('xmid:',str(d.stats('x','mid')))
+    print('xdiv:',str(d.stats('x','div')))
+    print('ymid:',str(d.stats('y','mid')))
+    print('ydiv:',str(d.stats('y','div')))
+
+    assert True
+
+def test_engine_bad():
+    print("Dont have this field \n !!! CRASH BAD false")
+    assert False
+
+def test_engine_list():
     assert True
 

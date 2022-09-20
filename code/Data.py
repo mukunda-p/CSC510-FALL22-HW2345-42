@@ -33,8 +33,11 @@ class Data:
                     j.add(row.cells[j.at])
 
 
-    def stats(self,fun='mid'):
-        showCols=self.cols.x or self.cols.y
+    def stats(self,column,fun='mid'):
+        if(column=='x'):
+            showCols=self.cols.x
+        if(column=='y'):
+            showCols=self.cols.y
         t={}
         for i in showCols:
             if(type(i)==Num):

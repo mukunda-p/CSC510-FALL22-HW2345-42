@@ -1,5 +1,6 @@
 from code.Num import Num
 from code.Sym import Sym
+
 class Cols:
 
     def __init__(self,names):
@@ -24,3 +25,6 @@ class Cols:
             if column_name[-1]=='!':
                 self.klass=column
             self.all.append(column)
+    
+    def __str__(self):
+        return f"names is {self.names}, all is {self.all}, klass is {self.klass}, x is {self.x}, y is {self.y}"
