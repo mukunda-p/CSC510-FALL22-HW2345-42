@@ -14,5 +14,28 @@ def main():
         -s --seed random number seed = 10019
         -S --seperator feild seperator = ,]]''')
 
+    if 'sym' in the['eg'].lower():
+        test_engine_sym()
+    elif 'bignum' in the['eg'].lower():
+        test_engine_bignum()
+    elif 'num' in the['eg'].lower():
+        test_engine_num()
+    elif 'csv' in the['eg'].lower():
+        test_engine_csv()
+    elif 'add' in the['eg'].lower():
+        test_engine_add()
+    elif 'stats' in the['eg'].lower():
+        test_engine_stats()
+    elif 'the' in the['eg'].lower():
+        test_engine_the()
+    elif 'all' in the['eg'].lower():
+        test_engine_sym()
+        test_engine_num()
+        test_engine_bignum()
+        test_engine_csv()
+        test_engine_add()
+        test_engine_stats()
+        test_engine_the()
 
-main()
+if __name__=="__main__":
+    main()
