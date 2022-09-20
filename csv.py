@@ -12,7 +12,7 @@ def main():
         -h --help show help = false
         -n --nums number of nums to keep = 512
         -s --seed random number seed = 10019
-        -S --seperator feild seperator = ,]]''')
+        -S --seperator feild seperator = ,''')
 
     if 'sym' in the['eg'].lower():
         test_engine_sym()
@@ -22,20 +22,14 @@ def main():
         test_engine_num()
     elif 'csv' in the['eg'].lower():
         test_engine_csv()
-    elif 'add' in the['eg'].lower():
-        test_engine_add()
+    elif 'data' in the['eg'].lower():
+        test_engine_data()
     elif 'stats' in the['eg'].lower():
         test_engine_stats()
     elif 'the' in the['eg'].lower():
         test_engine_the()
     elif 'all' in the['eg'].lower():
-        test_engine_sym()
-        test_engine_num()
-        test_engine_bignum()
-        test_engine_csv()
-        test_engine_add()
-        test_engine_stats()
-        test_engine_the()
+        test_engine_all()
 
 if __name__=="__main__":
     main()

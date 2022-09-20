@@ -37,8 +37,8 @@ class Num:
             self.high=max(self.high,int(ele))
             if ( (len(self._has))<(the['nums']) ):
                 pos=1+len(self._has)
-            elif ( random.randint(0,sys.maxsize) < (the['nums']/self.n) ):
-                pos=random.randint(0,len(self._has))
+            elif ( random.randint(0,len(self._has)) < (the['nums'])/self.n ):
+                pos=random.randint(1,len(self._has))
             if pos!=None:
                 self.isSorted=False
                 self._has[pos]=int(ele)

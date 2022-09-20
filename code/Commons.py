@@ -43,9 +43,7 @@ def cli():
     args=sys.argv[1:]
     
     i=0
-    if(len(args)<2):
-        raise Exception("Not enough arguments")
-
+    
     while i < len(args):
 
         if '-e' in args[i]:
@@ -64,10 +62,7 @@ def cli():
             the['nums']=int(args[i+1])
         
         elif '-h' in args[i]:
-            if(args[i+1].lower()=='false'):
-                the['help']=False
-            else:
-                the['help']=True
+            the['help']=True
 
         elif '-s' in args[i] or '-seed' in args[i]:
             the['seed']=int(args[i+1])
