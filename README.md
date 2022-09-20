@@ -18,11 +18,18 @@ Follow the steps for setting up the project:
 - git clone https://github.com/mukunda-p/CSC510-FALL22-HW2345-42.git
 - cd CSC510-FALL22-HW2345-42
 - pip install -r requirements.txt
-    
+- python csv.py -h (for help)
+
 ## Unit Tests Execution
 After setting up project follow the steps for unit tests execution:
-- python -m pytest
-- To add new test cases create new files under tests folder with name test_* or add the test cases in the exisiting test_eg.py
+- python csv.py -e ALL for running all the test cases.
+- python csv.py -e bignum for running a bignum test case.
+- python csv.py -e csv for running a csv test case. (can pass option parameter -f [filename] for passing explicit file)
+- python csv.py -e data for running a data test case.(can pass option parameter -f [filename] for passing explicit file)
+- python csv.py -e num for running a num test case.
+- python csv.py -e stats for running a stats test case.(can pass option parameter -f [filename] for passing explicit file)
+- python csv.py -e sym for running a data the case.
+- python csv.py -e the for running a data the case.
 
 ## Team Members:
 - Kalyan Karnati
