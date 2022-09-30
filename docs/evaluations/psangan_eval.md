@@ -1,6 +1,6 @@
 |Type| Detail|
 |--------|-------|
-| Evaluated By | Pranavi Sanganabhatla |
+| Evaluated By | Pranavi Sharma Sanganabhatla |
 | ID | 200473647 |
 | Unity ID | psangan |
 | Team | 42 |
